@@ -1,6 +1,6 @@
-# This was our mob final project for the last 2 weeks of the bootcamp at </Salt>. 
+# Bookclub - our mob final project at SALT. 
 
-The requirements for the final projects were, as following: 
+The requirements for the final 2 weeks projects were, as following: 
 • Must be full stack
 • Must use React/Vue & Node
 • Must persist some data in a database
