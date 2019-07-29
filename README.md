@@ -9,10 +9,10 @@ The requirements for the final 2 weeks projects were, as following:
 • Must work in strict mob, so that all of you have touched all parts of the project. No splitting up!
 
 Our mob has 4 members:
-- Oana Fatu (@oanafatu@github.com)
-- Andrea Gylling
-- Laszlo Bottlik
-- Nils Andersson
+- Oana Fatu (https://github.com/oanafatu)
+- Andrea Gylling (https://github.com/andreagylling)
+- László Bottlik (https://github.com/dadinho)
+- Nils Andersson (https://github.com/karlnilsthure)
 
 Among the technologies we used:
 - React, styled components and some other libraries for the front end
