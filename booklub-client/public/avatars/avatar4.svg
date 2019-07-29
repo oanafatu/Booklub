@@ -1,0 +1,37 @@
+
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1D0024" offset="0%"></stop>
+            <stop stop-color="#100014" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="150" cy="150" r="150"></circle>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#E6864E" offset="0%"></stop>
+            <stop stop-color="#E67240" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#FFC9B3" offset="0%"></stop>
+            <stop stop-color="#FFD2C2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFD4B3" offset="0%"></stop>
+            <stop stop-color="#FFDCC2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Avatars-by-Cecile-Parker" transform="translate(-100.000000, -100.000000)">
+            <g id="User-01a" transform="translate(100.000000, 100.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <path d="M51.2641611,159.5 C43.1522523,132.559488 38.1522523,86.5 72.2641611,55 C98.3339068,30.9263841 168.764161,28.5 193.264161,81 C197.354062,89.7640733 191.764161,103.5 180.764161,103 C176.440822,102.803485 173.764161,116.5 171.264161,125 C174.764161,159.5 205.946392,160.137051 221.764161,186.5 C241.264161,219 217.264161,267 159.764161,267 C102.264161,267 69.301569,219.404149 51.2641611,159.5 Z" id="Combined-Shape" fill="url(#linearGradient-4)" mask="url(#mask-3)" transform="translate(136.882081, 152.794268) scale(-1, 1) translate(-136.882081, -152.794268) "></path>
+                <path d="M242,238 C246.888889,247.333333 250.555556,269 253,303 L47,303 C49.4444444,269 53.1111111,247.333333 58,238 C65.3333333,224 96,208 150,190 C204,208 234.666667,224 242,238 Z" id="Rectangle" fill="url(#linearGradient-5)" mask="url(#mask-3)"></path>
+                <path d="M174,202 C165.489624,206.666667 157.319498,209 149.489624,209 C141.659749,209 133.829875,206.666667 126,202 L126,180 C123.007635,180.53394 120.712998,180.45433 118.357794,180.454083 C94.3705371,180.451576 85.3248118,145.510878 90,103 C93,103 100,103 110,89 C107.5,108.5 136.5,105.5 147.5,90 C142,108.5 156.5,121 169,113.5 C193.511348,98.7931915 199.020753,143.625811 174,144 L174,202 Z" id="Mask" fill="url(#linearGradient-6)" mask="url(#mask-3)"></path>
+                <path d="M126,180 C139.333333,177.666667 151,173.166667 161,166.5 C152.666667,180.833333 141,188 126,188 L126,180 Z" id="Path-2" fill="#FFB597" fill-rule="nonzero" mask="url(#mask-3)"></path>
+                <path d="M150.033093,207.974905 C157.260472,207.647816 174,204.107908 174,196.460304 L174,190 C175.834036,190 181.085402,194.332355 183.785918,198 C194.462379,212.5 182.619954,225.5 172.962379,225.5 C160.775724,225.5 152.701869,215.318477 150,210.419699 C147.298131,215.318477 139.224276,225.5 127.037621,225.5 C117.380046,225.5 105.537621,212.5 116.214082,198 C118.914598,194.332355 124.165964,190 126,190 L126,196.460304 C126,204.107906 143.191943,207.647815 150.033097,207.974905 L150.033093,207.974905 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

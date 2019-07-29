@@ -1,0 +1,28 @@
+{
+  "name": "booklub-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix ./src/*.js",
+    "prestart": "npm run lint",
+    "start": "node ./src/server.js",
+    "prewatch": "npm run lint",
+    "watch": "nodemon ./src/server.js & watch 'npm run lint' ./src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "eslint": "^6.0.1",
+    "express": "^4.17.1",
+    "google-auth-library": "^4.2.5",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0",
+    "watch": "^1.0.2",
+    "xml-js": "^1.6.11"
+  }
+}

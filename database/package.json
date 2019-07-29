@@ -1,0 +1,18 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-db-structure": "docker exec booklub-database psql -U jlano -d booklub -a -f /var/lib/postgresql/migration/structure.sql",
+    "generate-fake-data": "node ./db/migration/data.js",
+    "upload-fake-data": "docker exec booklub-database psql -U jlano -d booklub -a -f /var/lib/postgresql/migration/data.sql",
+    "migration": "npm run create-db-structure && npm run generate-fake-data && npm run upload-fake-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}

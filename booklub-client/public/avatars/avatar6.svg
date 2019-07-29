@@ -1,0 +1,54 @@
+
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFC9B3" offset="0%"></stop>
+            <stop stop-color="#FFD2C2" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="150" cy="150" r="150"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#130027" offset="0%"></stop>
+            <stop stop-color="#130017" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#E6864E" offset="0%"></stop>
+            <stop stop-color="#E67240" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFE0CC" offset="0%"></stop>
+            <stop stop-color="#FFEADB" offset="100%"></stop>
+        </linearGradient>
+        <path d="M127,113 C118.489624,117.666667 110.319498,120 102.489624,120 C94.6597491,120 86.8298746,117.666667 79,113 L79,91 C76.0076352,91.5339395 73.7129979,91.4543295 71.3577941,91.4540833 C47.3705371,91.4515761 38.3248118,56.5108776 43,14 C46,14 53,14 63,0 C60.5,19.5 89.5,16.5 100.5,1 C95,19.5 109.5,32 122,24.5 C146.511348,9.79319148 152.020753,54.6258109 127,55 L127,113 Z" id="path-7"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#130027" offset="0%"></stop>
+            <stop stop-color="#130017" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Avatars-by-Cecile-Parker" transform="translate(-900.000000, -100.000000)">
+            <g id="User-01c" transform="translate(900.000000, 100.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <path d="M51.2641611,159.5 C43.1522523,132.559488 38.1522523,86.5 72.2641611,55 C98.3339068,30.9263841 168.764161,28.5 193.264161,81 C197.354062,89.7640733 191.764161,103.5 180.764161,103 C176.440822,102.803485 173.764161,116.5 171.264161,125 C174.764161,159.5 205.946392,160.137051 221.764161,186.5 C241.264161,219 217.264161,267 159.764161,267 C102.264161,267 69.301569,219.404149 51.2641611,159.5 Z" id="Combined-Shape" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)" transform="translate(136.882081, 152.794268) scale(-1, 1) translate(-136.882081, -152.794268) "></path>
+                <g id="Group-16" mask="url(#mask-3)">
+                    <g transform="translate(47.000000, 89.000000)">
+                        <path d="M195,149.424779 C199.888889,158.840708 203.555556,180.699115 206,215 L0,215 C2.44444444,180.699115 6.11111111,158.840708 11,149.424779 C18.3333333,135.300885 49,119.159292 103,101 C157,119.159292 187.666667,135.300885 195,149.424779 Z" id="Rectangle" stroke="none" fill="url(#linearGradient-5)" fill-rule="evenodd"></path>
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Mask" stroke="none" fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <path d="M79,91 C92.3333333,88.6666667 104,84.1666667 114,77.5 C105.666667,91.8333333 94,99 79,99 L79,91 Z" id="Path-2" stroke="none" fill="#FFD7B8" fill-rule="nonzero" opacity="0.782421875" style="mix-blend-mode: multiply;" mask="url(#mask-8)"></path>
+                    </g>
+                </g>
+                <g id="Group-9" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g transform="translate(112.000000, 190.000000)" id="Combined-Shape">
+                        <path d="M38.0330932,17.9749055 C45.2604717,17.6478156 62,14.1079076 62,6.4603037 L62,0 C63.8340363,0 69.085402,4.33235455 71.7859176,8 C82.4623794,22.5 70.6199539,35.5 60.9623794,35.5 C48.7757235,35.5 40.7018686,25.3184767 38,20.4196991 C35.2981314,25.3184767 27.2242765,35.5 15.0376206,35.5 C5.38004611,35.5 -6.46237935,22.5 4.2140824,8 C6.91459801,4.33235455 12.1659637,0 14,0 L14,6.4603037 C14,14.1079065 31.1919427,17.6478145 38.0330965,17.9749053 L38.0330932,17.9749055 Z"></path>
+                    </g>
+                </g>
+                <path d="M150,240 C147.790861,240 146,238.209139 146,236 C146,233.790861 147.790861,232 150,232 C152.209139,232 154,233.790861 154,236 C154,238.209139 152.209139,240 150,240 Z M150,260 C147.790861,260 146,258.209139 146,256 C146,253.790861 147.790861,252 150,252 C152.209139,252 154,253.790861 154,256 C154,258.209139 152.209139,260 150,260 Z M150,280 C147.790861,280 146,278.209139 146,276 C146,273.790861 147.790861,272 150,272 C152.209139,272 154,273.790861 154,276 C154,278.209139 152.209139,280 150,280 Z" id="Combined-Shape" fill="url(#linearGradient-9)" fill-rule="nonzero" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

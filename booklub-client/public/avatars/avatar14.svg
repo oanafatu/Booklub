@@ -1,0 +1,43 @@
+
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#806A6A" offset="0%"></stop>
+            <stop stop-color="#665654" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="150" cy="150" r="150"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#E6864E" offset="0%"></stop>
+            <stop stop-color="#EB965E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#FFC9B3" offset="0%"></stop>
+            <stop stop-color="#FFD2C2" offset="100%"></stop>
+        </linearGradient>
+        <path d="M225,37.3078325 C231.346819,50.212366 236.346819,71.5456993 240,101.307832 L0,101.307832 C3.65492777,71.5423643 8.65492777,50.209031 15,37.3078325 C21.3450722,24.406634 43.0448302,11.9729428 80.099274,0.00675890314 C90.8126265,22.004858 149.607765,22.00243 159.870803,6.82121026e-13 C196.943448,11.9673548 218.653181,24.403299 225,37.3078325 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#1D0024" offset="0%"></stop>
+            <stop stop-color="#100014" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-05b">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(150.000000, 150.000000) scale(-1, 1) translate(-150.000000, -150.000000) " xlink:href="#path-2"></use>
+            <path d="M181,174 C181,174 181,178 181,186 C181,196.666667 188.666667,204.333333 204,209 C186.333333,222.333333 168.333333,229 150,229 C131.666667,229 113.666667,222.333333 96,209 C111.453736,204.333333 119.120402,196.666667 119,186 C118.819396,170 118.939799,160.60161 118.819396,133.187874 C104.487328,114.611186 105.406715,102.142995 113.243718,93.3750876 C130.747906,73.7916959 163.333333,67.3333333 211,74 C215.447979,121.995106 212.614646,152.995106 202.5,167 C198.166667,173 191,175.333333 181,174 Z" id="face" fill="url(#linearGradient-4)" mask="url(#mask-3)"></path>
+            <path d="M181,174 C166.333333,172.333333 154.666667,168.333333 146,162 C153.333333,174.333333 165,182.333333 181,186 L181,174 Z" id="shade" fill="#DB6F3D" mask="url(#mask-3)"></path>
+            <g id="body" mask="url(#mask-3)">
+                <g transform="translate(30.000000, 202.000000)">
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <use id="Mask" stroke="none" fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <path d="M-10,38 L250,38 L250,46 L-10,46 L-10,38 Z M-10,58 L250,58 L250,66 L-10,66 L-10,58 Z M-10,78 L250,78 L250,86 L-10,86 L-10,78 Z" id="Combined-Shape" stroke="none" fill="#FFA789" fill-rule="nonzero" mask="url(#mask-7)"></path>
+                </g>
+            </g>
+            <path d="M131.154922,103.208791 C127.974537,100.477496 124.110792,98.6389136 118.64889,101.476763 C105.699543,108.204876 115.5,134 127,134 C130.000864,134 131.492423,143.422491 118.134562,150.00341 C118.134562,139.50341 102.134562,113.50341 100.739169,89.8309392 C84.6345625,83.8361652 88.6345625,59.8492144 99.6921841,59.8492144 C97.9236134,37.8576818 133.134562,26.5034099 146.768595,39.1193793 C160.634562,22.5034099 195.634562,31.0034099 197.748286,45.4183149 C221.814567,32.5705873 237.634562,69.5034099 215.09962,83.8361652 C205.827015,89.7337609 184.134562,91.9811964 152.822065,91.9811964 C148.09555,91.9811964 145.447556,93.1549942 146.768595,99 C149.328312,110.325607 143.386893,117.460198 131.154922,103.208791 Z" id="hair" fill="url(#linearGradient-8)" fill-rule="nonzero" mask="url(#mask-3)"></path>
+        </g>
+    </g>
+</svg>
