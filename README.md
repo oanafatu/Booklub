@@ -30,3 +30,5 @@ We worked Scrum:
 - we did a planning for sprint 2 out of the product backlog, we had to prioritize again so that we have a fully working app by the end of the week. And we made it! 
 
 
+### Feel free to take a look at our final demo presentation:
+https://docs.google.com/presentation/d/1WGrCBSMtBuox0oCYyMCXmbBf2a2rarrMJh1U21-MMLQ/edit?usp=sharing
