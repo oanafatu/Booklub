@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const db = require('./database');
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 
 
@@ -19,6 +19,18 @@ app.use((req, res, next) => {
 
 app.use(cookieParser());
 app.use(bodyParser.json());
+
+app.get('/api/test',  async (req, res) => {
+  try {
+    let result = await db.test();
+
+    console.log(result);
+
+    res.send(result);
+  } catch (err){
+    console.log(err);
+  }
+});
 
 app.get('/api/booksearch/:query', async (req, res) => {
   try {

@@ -272,6 +272,22 @@ async function setNewDate (dateType, date, bookId, bookclubId) {
     :  await executeQuery(updateEndDateCurrentBook, [date, bookId, bookclubId]);
 }
 
+const testSQL = `
+DROP TABLE IF EXISTS test;
+CREATE TABLE test (
+	id serial not null PRIMARY KEY,
+  name varchar
+);
+INSERT INTO test (name) VALUES ('A Little Life');
+SELECT * from test;
+`;
+
+async function test (){
+  const result = await executeQuery(testSQL);
+  return result[3].rows;
+}
+
+module.exports.test = test;
 module.exports.addBookToBooks = addBookToBooks;
 module.exports.searchForBook = searchForBook;
 module.exports.addBookToLib = addBookToLib;
