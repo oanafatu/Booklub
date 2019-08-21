@@ -1,0 +1,41 @@
+
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#806A6A" offset="0%"></stop>
+            <stop stop-color="#665654" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="150" cy="150" r="150"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#F7B186" offset="0%"></stop>
+            <stop stop-color="#FFC299" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#FFC9B3" offset="0%"></stop>
+            <stop stop-color="#FFD2C2" offset="100%"></stop>
+        </linearGradient>
+        <path d="M225,52.3078325 C231.346819,65.212366 236.346819,86.5456993 240,116.307832 L0,116.307832 C3.65492777,86.5423643 8.65492777,65.209031 15,52.3078325 C19.2161262,43.7353404 40.8827929,31.1990384 80,14.6989264 C80.7789494,7.15648358 82.1122827,2.84472022 84,1.76363636 C86.831576,0.142010581 152.626947,0.142185625 156,1.76363636 C158.248702,2.84460352 159.582035,7.15411391 160,14.6921675 C199.125557,31.2139065 220.792224,43.7524615 225,52.3078325 Z" id="path-6"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Avatars-by-Cecile-Parker" transform="translate(-500.000000, -500.000000)">
+            <g id="User-02b" transform="translate(500.000000, 500.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+                <path d="M182,176 L182,204 L118,204 C118.080268,176.401073 118.080268,153.463698 118,135.187874 C103.667931,116.611186 103.667931,105 115,93 C122.554712,85 153.221379,79 207,75 C211.034992,113.806634 213.368325,138.473301 214,149 C214.38105,155.350093 218.5,176 202.5,176 C196.502812,176 189.669479,176 182,176 Z" id="Mask" fill="url(#linearGradient-4)" mask="url(#mask-3)"></path>
+                <path d="M182,174 C167.333333,172.333333 155,168.333333 145,162 C149.666667,174.666667 162,183 182,187 L182,174 Z" id="Path-48" fill="#F08956" mask="url(#mask-3)"></path>
+                <path d="M131.020359,105.205381 C127.839974,102.474086 123.97623,100.635504 118.514327,103.473353 C105.564981,110.201466 114.15917,136.134935 128.650337,135.628893 C133.647291,135.454395 131.35786,145.419081 118,152 C118,141.5 102,115.5 100.604607,91.8275293 C84.5,85.8327553 88.5,61.8458045 99.5576217,61.8458045 C97.7890509,39.8542719 133,28.5 146.634032,41.1159694 C160.5,24.5 195.5,33 197.613724,47.414905 C221.680005,34.5671774 237.5,71.5 214.965057,85.8327553 C205.692452,91.730351 184,93.9777865 152.687502,93.9777865 C137.661061,93.9777865 146.302587,129.147918 151,140.5 C157,155 190.5,157 201,155.5 C209.199494,154.328644 213.5,151 214,149 C221.5,169 211.999925,181 197,181 C171.5,181 146,173.5 142,155 C138.816577,140.27667 138.991047,116.515989 131.020359,105.205381 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                <g id="Group-2" mask="url(#mask-3)">
+                    <g transform="translate(30.000000, 191.000000)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Combined-Shape" stroke="none" fill="url(#linearGradient-5)" fill-rule="evenodd" xlink:href="#path-6"></use>
+                        <path d="M-16,35 L253,35 L253,43 L-16,43 L-16,35 Z M-16,55 L253,55 L253,63 L-16,63 L-16,55 Z M-16,75 L253,75 L253,83 L-16,83 L-16,75 Z M-16,95 L253,95 L253,103 L-16,103 L-16,95 Z" id="Combined-Shape" stroke="none" fill="#FFA789" fill-rule="nonzero" mask="url(#mask-7)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

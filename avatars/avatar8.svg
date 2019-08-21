@@ -1,0 +1,47 @@
+
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFC9B3" offset="0%"></stop>
+            <stop stop-color="#FFD2C2" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="150" cy="150" r="150"></circle>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#E6864E" offset="0%"></stop>
+            <stop stop-color="#EB965E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#130027" offset="0%"></stop>
+            <stop stop-color="#130017" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-6">
+            <stop stop-color="#E6864E" offset="0%"></stop>
+            <stop stop-color="#E67240" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#130027" offset="0%"></stop>
+            <stop stop-color="#130017" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Avatars-by-Cecile-Parker" transform="translate(-900.000000, -500.000000)">
+            <g id="User-02c" transform="translate(900.000000, 500.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <g id="Group-12" mask="url(#mask-3)">
+                    <g transform="translate(30.000000, 31.000000)">
+                        <path d="M152,145 L152,167 C152,168.452159 141.333333,171.376217 120,175.772175 C98.6666667,171.995638 88,169.071579 88,167 C88,161.120425 88.1204025,131.60161 88,104.187874 C73.6679315,85.6111857 73.6679315,74 85,62 C92.5547124,54 123.221379,48 177,44 C181.034992,82.8066345 183.368325,107.473301 184,118 C184.38105,124.350093 188.5,145 172.5,145 C166.502812,145 159.669479,145 152,145 Z" id="Mask" fill="url(#linearGradient-4)" fill-rule="evenodd"></path>
+                        <path d="M152,143.12313 L152,155.160327 C130.567366,151.342766 118.234033,143.289324 115,131 C124.333333,137.333333 136.333333,141.333333 151,143 C151.335006,143.038069 151.668389,143.079152 152,143.12313 Z" id="Combined-Shape" fill="#F5C6A6" fill-rule="evenodd" style="mix-blend-mode: multiply;"></path>
+                        <path d="M225,212.307832 C231.346819,225.212366 236.346819,246.545699 240,276.307832 L0,276.307832 C3.65492777,246.542364 8.65492777,225.209031 15,212.307832 C19.2161262,203.73534 40.8827929,191.199038 80,174.698926 L160,174.692168 C199.125557,191.213907 220.792224,203.752461 225,212.307832 Z" id="Combined-Shape" fill="url(#linearGradient-5)" fill-rule="nonzero"></path>
+                        <path d="M127,181 L132,273 L108,273 L113,181 C116.111111,177.666667 118.444444,176 120,176 C121.555556,176 123.888889,177.666667 127,181 Z" id="Mask" fill="url(#linearGradient-6)" fill-rule="evenodd"></path>
+                        <path d="M128.011845,199.617955 L112.475995,190.641686 L113,181 C116.111111,177.666667 118.444444,176 120,176 C121.555556,176 123.888889,177.666667 127,181 L128.011845,199.617955 Z" id="Combined-Shape" fill="#D24B24" fill-rule="evenodd"></path>
+                        <polygon id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd" points="120 175.991342 110 194 79 175 88 162 120 173.821068 152 162 161 175 130 194"></polygon>
+                        <path d="M101.020359,74.2053813 C97.839974,71.4740861 93.9762297,69.6355037 88.514327,72.4733532 C75.5649807,79.2014659 84.1591698,105.134935 98.6503368,104.628893 C103.647291,104.454395 101.35786,114.419081 88,121 C88,110.5 72,84.5 70.6046066,60.8275293 C54.5,54.8327553 58.5,30.8458045 69.5576217,30.8458045 C67.7890509,8.85427185 103,-2.5 116.634032,10.1159694 C130.5,-6.5 165.5,2 167.613724,16.414905 C191.680005,3.56717741 207.5,40.5 184.965057,54.8327553 C175.692452,60.730351 154,62.9777865 122.687502,62.9777865 C107.661061,62.9777865 116.302587,98.1479185 121,109.5 C127,124 160.5,126 171,124.5 C179.199494,123.328644 183.5,120 184,118 C191.5,138 181.999925,150 167,150 C141.5,150 116,142.5 112,124 C108.816577,109.27667 108.991047,85.5159886 101.020359,74.2053813 Z" id="Combined-Shape" fill="url(#linearGradient-7)" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

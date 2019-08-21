@@ -1,0 +1,35 @@
+
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#806A6A" offset="0%"></stop>
+            <stop stop-color="#665654" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="150" cy="150" r="150"></circle>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#FFC9B3" offset="0%"></stop>
+            <stop stop-color="#FFD2C2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#1D0024" offset="0%"></stop>
+            <stop stop-color="#100014" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#E6864E" offset="0%"></stop>
+            <stop stop-color="#EB965E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-04b" transform="translate(150.000000, 150.000000) scale(-1, 1) translate(-150.000000, -150.000000) ">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(150.000000, 150.000000) scale(-1, 1) translate(-150.000000, -150.000000) " xlink:href="#path-2"></use>
+            <path d="M242,235 C246.888889,244.333333 250.555556,266 253,300 L47,300 C49.4444444,266 53.1111111,244.333333 58,235 C65.3333333,221 96,205 150,187 C204,205 234.666667,221 242,235 Z" id="Rectangle" fill="url(#linearGradient-4)" mask="url(#mask-3)" transform="translate(150.000000, 243.500000) scale(-1, 1) translate(-150.000000, -243.500000) "></path>
+            <path d="M228.191296,175.411059 L65.7337407,155.777926 C57.724351,113.259309 67.224351,86.4703532 94.2337407,75.4110595 C106.719656,34.5 155.317334,37.827648 169.091549,41.162898 C215.96732,52.5132662 235.667235,97.2626534 228.191296,175.411059 Z" id="Combined-Shape" fill="url(#linearGradient-5)" fill-rule="nonzero" mask="url(#mask-3)" transform="translate(146.359828, 107.371979) scale(-1, 1) translate(-146.359828, -107.371979) "></path>
+            <path d="M105.303132,199 L105.303132,139 C80.2823789,138.625811 85.1622467,95.2679553 110.303132,108.5 C114.803132,110.5 126.303132,105 122.303132,91.5 C149.303132,111.5 186.927545,76.3990992 189.303132,98 C193.97832,140.510878 184.932594,175.451576 160.945337,175.454083 C158.590134,175.45433 156.295496,175.53394 153.303132,175 L153.303132,199 C145.473257,203.666667 137.643382,206 129.813508,206 C121.983633,206 113.813508,203.666667 105.303132,199 Z" id="Mask" fill="url(#linearGradient-6)" mask="url(#mask-3)" transform="translate(139.651566, 148.341257) scale(-1, 1) translate(-139.651566, -148.341257) "></path>
+            <path d="M161,175 L161,183 C146,183 134.333333,175.833333 126,161.5 C136,168.166667 147.666667,172.666667 161,175 Z" id="Path-2" fill="#DB6F3D" mask="url(#mask-3)" transform="translate(143.500000, 172.250000) scale(-1, 1) translate(-143.500000, -172.250000) "></path>
+            <path d="M149.966903,204.974905 C156.808057,204.647815 174,201.107906 174,193.460304 L174,187 C175.834036,187 181.085402,191.332355 183.785918,195 C194.462379,209.5 182.619954,222.5 172.962379,222.5 C160.775724,222.5 152.701869,212.318477 150,207.419699 C147.298131,212.318477 139.224276,222.5 127.037621,222.5 C117.380046,222.5 105.537621,209.5 116.214082,195 C118.914598,191.332355 124.165964,187 126,187 L126,193.460304 C126,201.107908 142.739528,204.647816 149.966907,204.974905 L149.966903,204.974905 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-3)" transform="translate(150.000000, 204.750000) scale(-1, 1) translate(-150.000000, -204.750000) "></path>
+        </g>
+    </g>
+</svg>
