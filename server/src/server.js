@@ -20,17 +20,7 @@ app.use((req, res, next) => {
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-app.get('/api/test',  async (req, res) => {
-  try {
-    let result = await db.test();
-
-    console.log(result);
-
-    res.send(result);
-  } catch (err){
-    console.log(err);
-  }
-});
+app.set('trust proxy', 1);
 
 app.get('/api/booksearch/:query', async (req, res) => {
   try {
@@ -42,8 +32,8 @@ app.get('/api/booksearch/:query', async (req, res) => {
 });
 
 app.get('/api/mylibrary', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  const userId = 2;
+  const userId = req.cookies['userId'];
+  
   try {
     let result = await db.getUserLib(userId);
     res.send(result);

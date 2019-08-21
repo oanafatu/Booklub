@@ -20,12 +20,13 @@
   "scripts": {
     "start-https": "HTTPS=true react-scripts start",
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/*.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "lint": "eslint ./src/*.js"
+   
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,5 +52,5 @@
     "eslint-plugin-react": "^7.14.2",
     "gh-pages": "^2.1.1"
   },
-  "homepage": "http://oanafatu.github.io/Booklub"
+  "homepage": "http://oanafatu.github.io/Booklub/"
 }

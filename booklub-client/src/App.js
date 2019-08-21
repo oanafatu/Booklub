@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
 import BookSearch from './Views/BookSearch';
 import MyLibrary from './Views/MyLibrary';
 import CreateClub from './Views/CreateClub';
@@ -18,20 +18,20 @@ function App() {
   const [history, setHistory] = useState({});
   return (
     <HistoryContext.Provider value={{history, setHistory}}>
-      <BrowserRouter>
+      <HashRouter>
         <div className="main-container">
           <Route exact path='/login'  component={Login} />
-          <PrivateRoute exact path='/' component={UserProfile}/>
-          <PrivateRoute exact path='/bookclubs/:id/setcurrentbook' component={SetCurrentBook} />
-          <PrivateRoute exact path='/mylibrary'  component={MyLibrary} />
-          <PrivateRoute exact path='/mybookclubs' component={MyBookclubs} />
-          <PrivateRoute exact path='/booksearch'  component={BookSearch} />
-          <PrivateRoute exact path='/createclub'  component={CreateClub} />
-          <PrivateRoute exact path='/bookclub/:id' component={Bookclub} />
-          <PrivateRoute exact path='/bookclub/:id/addmembers' component={AddMembers} />
-          <PrivateRoute exact path='/myratings' component={MyRatings} />
+          <PrivateRoute  path='/' component={UserProfile}/>
+          <PrivateRoute  path='/bookclubs/:id/setcurrentbook' component={SetCurrentBook} />
+          <PrivateRoute  path='/mylibrary'  component={MyLibrary} />
+          <PrivateRoute  path='/mybookclubs' component={MyBookclubs} />
+          <PrivateRoute  path='/booksearch'  component={BookSearch} />
+          <PrivateRoute  path='/createclub'  component={CreateClub} />
+          <PrivateRoute  path='/bookclub/:id' component={Bookclub} />
+          <PrivateRoute  path='/bookclub/:id/addmembers' component={AddMembers} />
+          <PrivateRoute  path='/myratings' component={MyRatings} />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </HistoryContext.Provider>
   );
 }
