@@ -3,7 +3,7 @@ import Header from '../Components/Header';
 import SearchBar from '../Components/SearchBar';
 import BookCard from '../Components/BookCard';
 import SpinnerBooks from '../Components/SpinnerBooks';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 
 
 export default function BookSearch () {

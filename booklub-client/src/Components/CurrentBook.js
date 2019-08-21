@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import cleanDate from '../helper/date';
 import Datetime from 'react-datetime';
 import './../Datetime.css';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 import Button from './Button';
 
 

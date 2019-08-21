@@ -4,7 +4,7 @@ import SearchBar from '../Components/SearchBar';
 import MemberCard from '../Components/MemberCard';
 import NoResult from '../Components/NoResult';
 import styled from 'styled-components';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 
 const Text = styled.p`
   font-size: 14px;

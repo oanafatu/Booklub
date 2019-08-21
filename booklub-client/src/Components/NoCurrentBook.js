@@ -8,8 +8,6 @@ const Header = styled.p`
   margin: 20px auto;
 `
 
-
-
 export default function NoCurrentBook (props){
   return (
     <>

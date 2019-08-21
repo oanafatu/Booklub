@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import Header from '../Components/Header';
 import BigButton from '../Components/BigButton';
 import styled from 'styled-components';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 import 'react-toastify/dist/ReactToastify.css'
 import { toast } from 'react-toastify';
 

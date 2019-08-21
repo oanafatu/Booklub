@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from './../Components/Header';
 import NoResult from './../Components/NoResult';
 import RatedBook from './../Components/RatedBook';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 
 export default function MyRatings () {
   const [ ratedBooks, setRatedBooks ] = useState([]);

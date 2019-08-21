@@ -1,4 +1,4 @@
-import doFetch from '../fetch';
+import doFetch from './fetch';
 
 const startApp = () => {
   window.gapi.load('auth2', function(){

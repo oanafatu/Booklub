@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import TitleRedirect from '../Components/TitleRedirect';
 import BookSlider from '../Components/BookSlider';
 import ImageSlider from '../Components/ImageSlider';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 import gauth from './../helper/googleAuth';
 import styled from 'styled-components';
 import NoContentLarge from './../Components/NoContentLarge';

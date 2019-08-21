@@ -4,7 +4,7 @@ import Button from './Button';
 import ReadStatus from './ReadStatus';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 
 toast.configure({});
 

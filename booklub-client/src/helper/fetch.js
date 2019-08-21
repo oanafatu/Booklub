@@ -1,4 +1,5 @@
-const url = 'http://localhost:4000/api/';
+//const url = 'http://localhost:4000/api/';
+const url = 'https://booklub-jlano.herokuapp.com/api/';
 
 async function doFetch(endpoint, method, data = null) {
 

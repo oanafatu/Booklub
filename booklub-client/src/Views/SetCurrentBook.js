@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import Header from '../Components/Header';
 import SearchBar from '../Components/SearchBar';
 import Button from '../Components/Button';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 import NoContentLarge from '../Components/NoContentLarge';
 import styled from 'styled-components';
 import {HistoryContext} from './../App';

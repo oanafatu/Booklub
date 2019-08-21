@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import StarRatings from 'react-star-ratings';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 
 const Image = styled.div `
   background-image: url(${props => props.img});

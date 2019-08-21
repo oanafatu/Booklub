@@ -18,11 +18,14 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
+    "start-https": "HTTPS=true react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint ./src/*.js"
+    "lint": "eslint ./src/*.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -45,6 +48,8 @@
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jest": "^22.7.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2"
-  }
+    "eslint-plugin-react": "^7.14.2",
+    "gh-pages": "^2.1.1"
+  },
+  "homepage": "http://oanafatu.github.io/Booklub"
 }

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import Header from '../Components/Header';
 import ClubCard from '../Components/ClubCard';
 import BigButton from '../Components/BigButton';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 import NoContentLarge from '../Components/NoContentLarge';
 
 

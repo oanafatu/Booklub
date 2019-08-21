@@ -5,7 +5,7 @@ import BigButton from '../Components/BigButton';
 import ClubRatings from '../Components/ClubRatings';
 import CurrentBook from './../Components/CurrentBook';
 import NoCurrentBook from './../Components/NoCurrentBook';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 import NoClubRatings from '../Components/NoClubRatings';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

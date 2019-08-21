@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import Button from '../Components/Button';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styled from 'styled-components';

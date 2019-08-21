@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import Button from './Button';
-import doFetch from '../fetch';
+import doFetch from '../helper/fetch';
 
 const Container = styled.div`
   margin: 0 auto;

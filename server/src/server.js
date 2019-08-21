@@ -42,7 +42,8 @@ app.get('/api/booksearch/:query', async (req, res) => {
 });
 
 app.get('/api/mylibrary', async (req, res) => {
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  const userId = 2;
   try {
     let result = await db.getUserLib(userId);
     res.send(result);
