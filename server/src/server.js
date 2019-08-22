@@ -7,10 +7,9 @@ const db = require('./database');
 const app = express();
 const port = process.env.PORT || 4000;
 
-
-
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', req.headers.origin);
+  //res.header('Access-Control-Allow-Origin', 'https://oanafatu.github.io/Booklub/');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   res.header('Access-Control-Allow-Credentials', true);
@@ -20,7 +19,28 @@ app.use((req, res, next) => {
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-app.set('trust proxy', 1);
+app.post('/api/authenticate/', async (req, res) => {
+  
+  try {
+    const idToken = req.body.idToken;
+    const userGoogle = await google.verify(idToken).catch(console.error);
+    const userData = await db.getUserByGoogleId(userGoogle.id);
+
+    if (userData.rows.length < 1) {
+      userGoogle.avatar = randomAvatar();
+      const userId = await db.addNewUser(userGoogle);
+      res.cookie('userId', userId);
+      return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
+    }
+    let userId=userData.rows[0].id;
+    
+    res.cookie('userId', userId);
+    res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));
+  } catch (err) {
+    console.log(err);
+  }
+});
+
 
 app.get('/api/booksearch/:query', async (req, res) => {
   try {
@@ -202,27 +222,6 @@ app.get('/api/myprofile', async (req, res) => {
   }
 });
 
-app.post('/api/authenticate/', async (req, res) => {
-  
-  try {
-    const idToken = req.body.idToken;
-    const userGoogle = await google.verify(idToken).catch(console.error);
-    const userData = await db.getUserByGoogleId(userGoogle.id);
-
-    if (userData.rows.length < 1) {
-      userGoogle.avatar = randomAvatar();
-      const userId = await db.addNewUser(userGoogle);
-      res.cookie('userId', userId);
-      return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
-    }
-    let userId=userData.rows[0].id;
-    
-    res.cookie('userId', userId);
-    res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));
-  } catch (err) {
-    console.log(err);
-  }
-});
 
 app.post('/api/bookclub/:id/setcurrentbook', async (req, res) => {
   const bookclubId = req.params.id;

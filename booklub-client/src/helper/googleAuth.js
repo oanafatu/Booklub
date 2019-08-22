@@ -19,7 +19,7 @@ const attachSignin = element => {
       })
       .then(data => {
         if (data.userId) {
-          window.location = "/";
+          window.location.href = process.env.PUBLIC_URL + '/';
         }
       })
 
