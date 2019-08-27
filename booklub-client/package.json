@@ -18,7 +18,6 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "start-https": "HTTPS=true react-scripts start",
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -52,5 +51,5 @@
     "eslint-plugin-react": "^7.14.2",
     "gh-pages": "^2.1.1"
   },
-  "homepage": "http://oanafatu.github.io/Booklub/"
+  "homepage": "https://oanafatu.github.io/Booklub/"
 }

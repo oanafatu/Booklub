@@ -32,7 +32,8 @@ app.post('/api/authenticate/', async (req, res) => {
       res.cookie('userId', userId);
       return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
     }
-    let userId=userData.rows[0].id;
+    
+    let userId = userData.rows[0].id;
     
     res.cookie('userId', userId);
     res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));

@@ -19,7 +19,7 @@ const attachSignin = element => {
       })
       .then(data => {
         if (data.userId) {
-          window.location.href = process.env.PUBLIC_URL + '/';
+          window.location = '/Booklub/';
         }
       })
 
