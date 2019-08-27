@@ -9,7 +9,6 @@ const port = process.env.PORT || 4000;
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', req.headers.origin);
-  //res.header('Access-Control-Allow-Origin', 'https://oanafatu.github.io/Booklub/');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   res.header('Access-Control-Allow-Credentials', true);
@@ -30,12 +29,14 @@ app.post('/api/authenticate/', async (req, res) => {
       userGoogle.avatar = randomAvatar();
       const userId = await db.addNewUser(userGoogle);
       res.cookie('userId', userId);
+      //res.cookie('userId', userId, { domain: 'oanafatu.github.io', path: '/'})
       return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
     }
-    
+
     let userId = userData.rows[0].id;
     
     res.cookie('userId', userId);
+    //res.cookie('userId', userId, { domain: 'oanafatu.github.io', path: '/'})
     res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));
   } catch (err) {
     console.log(err);
