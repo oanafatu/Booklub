@@ -62,7 +62,7 @@ export default function UserProfile (props) {
   
   useEffect(() => {
 
-    //gauth.startApp();
+    gauth.startApp();
 
     doFetch('myprofile/', 'GET')
       .then(data => {

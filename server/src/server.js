@@ -79,9 +79,9 @@ app.get('/api/mybookclubs', async (req, res) => {
 });
 
 app.post('/api/book/addtomylibrary', async (req, res) => {
+  //const userId = req.cookies['userId'];
+  userId = 1;
   try {
-    //const userId = req.cookies['userId'];
-    userId = 1;
     let booksContent = await db.searchForBook(req.body.id);
 
     if (booksContent.rows.length < 1) {
@@ -213,8 +213,8 @@ app.post('/api/mylibrary/readstatus', async (req, res) =>{
 });
 
 app.get('/api/myprofile', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
 
   try {
     const user = await db.getUserById(userId);
@@ -282,7 +282,6 @@ app.post('/api/bookclub/:id/changedate', async (req, res) => {
 app.post('/api/bookclub/:id/markdone', async (req, res) => {
   const bookclubId = req.params.id;
   const bookId = req.body.bookId;
-
 
   //const userId = req.cookies['userId'];
   userId = 1;

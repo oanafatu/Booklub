@@ -58,8 +58,8 @@ export default function Login(){
           <Logo>booklub</Logo>
           <Slogan>read with friends</Slogan>
           <SigninButton id="signin" > 
-          <Google className="fab fa-google"></Google>
-          <BtnText>Login with Google</BtnText>
+            <Google className="fab fa-google"></Google>
+            <BtnText>Login with Google</BtnText>
           </SigninButton>
         </Container>
       </>

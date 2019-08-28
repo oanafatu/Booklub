@@ -32,8 +32,9 @@ const attachSignin = element => {
 const signOut = () => {
   var auth2 = window.gapi.auth2.getAuthInstance();
   auth2.signOut().then(function () {
-    window.document.cookie = "userId=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    window.location = '/Booklub/login';
+    console.log('click logout');
+    window.document.cookie = "userId=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.booklub-jlano.herokuapp.com";
+    window.location = '/Booklub/#/login';
   });
 };
 
@@ -58,3 +59,4 @@ export default {
   signOut,
   startApp: () => window.addEventListener('load', () => startApp())
 }
+
