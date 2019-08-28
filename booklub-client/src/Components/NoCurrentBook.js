@@ -13,7 +13,7 @@ export default function NoCurrentBook (props){
     <>
       <Header>Currently reading</Header>
       <NoContentLarge 
-        src="/build/icons/sleepCloud.svg" 
+        src="/Booklub/icons/sleepCloud.svg" 
         h1="No current book selected" 
         text="You can set the current book by choosing from the books you have in your library."
         buttonLink={{

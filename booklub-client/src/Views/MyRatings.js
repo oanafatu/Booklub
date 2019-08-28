@@ -17,7 +17,7 @@ export default function MyRatings () {
     <> 
       <Header title="My Ratings" />
      { ratedBooks.length ? ratedBooks.map( (book, index) => <RatedBook key={index} {...book} rated={{setRate, rate}}/> ) : 
-      <NoResult src="/icons/speechBubble.svg" text="Your rated books will appear here" />}  
+      <NoResult src="/Booklub/icons/speechBubble.svg" text="Your rated books will appear here" />}  
     </>
   )
 }

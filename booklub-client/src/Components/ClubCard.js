@@ -82,7 +82,7 @@ export default function ClubCard(props) {
     <>
       <Container >
         <Circle>
-          <Avatar src="/icons/bookRow.svg"></Avatar>
+          <Avatar src="/Booklub/icons/bookRow.svg"></Avatar>
         </Circle>
         <Text>
           <Name>{props.name}</Name>

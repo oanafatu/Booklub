@@ -11,7 +11,7 @@ export default function MyBookclubs(){
   const [bookClubs, setBookClubs] = useState([]);
 
   const noClubOptions = {
-    src: "/icons/speechBubble.svg",
+    src: "/Booklub/icons/speechBubble.svg",
     h1: "You haven't joined any bookclubs yet...!",
     text: "Ask your friends to add you or create your own bookclub here.",
     buttonLink: {

@@ -34,18 +34,18 @@ query.push(`INSERT INTO books (title, author, goodreads_id, goodreads_rating, im
 query.push(`INSERT INTO books (title, author, goodreads_id, goodreads_rating, image) VALUES ('Romeo och Juliet', 'William Shakespeare', 3349450, '3.74', 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1332704181l/13560572._SY160_.jpg')`);
 
 // 4 users in users table
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('114500131793469053014','Oana', 'Fatu', 'oana.fatu@appliedtechnology.se', '/avatars/avatar1.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('115257051944211650687','Andrea', 'Gylling', 'andreagylling@gmail.com', '/avatars/avatar4.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('105374911423642235539','Nils', 'Andersson', 'nils.andersson@appliedtechnology.se', '/avatars/avatar2.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('114256998440541403109','Laszlo', 'Bottlik', 'lazslo.bottlik@appliedtechnology.se', '/avatars/avatar21.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('114500131793469053014','Oana', 'Fatu', 'oana.fatu@appliedtechnology.se', '/Booklub/avatars/avatar1.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('115257051944211650687','Andrea', 'Gylling', 'andreagylling@gmail.com', '/Booklub/avatars/avatar4.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('105374911423642235539','Nils', 'Andersson', 'nils.andersson@appliedtechnology.se', '/Booklub/avatars/avatar2.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('114256998440541403109','Laszlo', 'Bottlik', 'lazslo.bottlik@appliedtechnology.se', '/Booklub/avatars/avatar21.svg')`);
 
 // 6 fake users
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('123','Amelia', 'Bob', 'amelia@bob.com', '/avatars/avatar15.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('456','Bob', 'Doe', 'bob@doe.com', '/avatars/avatar16.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('789','John', 'Jam', 'john@jam.com', '/avatars/avatar17.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('101112','Carmen', 'Starts', 'carmen@starts.com', '/avatars/avatar18.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('1314','Vlad', 'Tepes', 'vlad@tepes.com', '/avatars/avatar14.svg')`);
-query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('1516','Adrian', 'Star', 'adrian@star.com', '/avatars/avatar13.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('123','Amelia', 'Bob', 'amelia@bob.com', '/Booklub/avatars/avatar15.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('456','Bob', 'Doe', 'bob@doe.com', '/Booklub/avatars/avatar16.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('789','John', 'Jam', 'john@jam.com', '/Booklub/avatars/avatar17.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('101112','Carmen', 'Starts', 'carmen@starts.com', '/Booklub/avatars/avatar18.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('1314','Vlad', 'Tepes', 'vlad@tepes.com', '/Booklub/avatars/avatar14.svg')`);
+query.push(`INSERT INTO users (google_id, first_name, last_name, email, avatar) VALUES ('1516','Adrian', 'Star', 'adrian@star.com', '/Booklub/avatars/avatar13.svg')`);
 
 
 // 4 booksclubs

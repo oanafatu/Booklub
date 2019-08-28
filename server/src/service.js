@@ -76,7 +76,7 @@ async function getDetails (bookClub) {
 
 function randomAvatar() {
   const randomNumber = Math.floor(Math.random() * (21 - 1) ) + 1;
-  return '/avatars/avatar' + randomNumber + '.svg';
+  return '/Booklub/avatars/avatar' + randomNumber + '.svg';
 }
 
 module.exports = { searchBook, getDetails, randomAvatar };

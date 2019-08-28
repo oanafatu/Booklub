@@ -15,13 +15,6 @@ const MainContainer = styled.div`
   display: block;
 `;
 
-const PhoneBar = styled.div`
-  display: block;
-  position: absolute;
-  top: -0.5px;
-  right: 1px;
-  margin: 0px auto;
-`;
 
 const Club = styled.div`
   text-align: center;
@@ -85,17 +78,15 @@ export default function UserProfile (props) {
   books = books.sort((a, b) => a.is_read - b.is_read)
 
   const noClubOptions = {
-    src:  "/icons/speechBubble.svg",
+    src:  "/Booklub/icons/speechBubble.svg",
     h1: "You haven't joined any bookclubs yet...!",
     text: "Ask your friends to add you or create your own bookclub here.",
     btnText: "Create new club",
     handleClick: () => props.history.push('/createclub')
   };
-  
-// "/icons/speechBubble.svg",
 
   const noBooksOptions = {
-    src: "/icons/search.svg",
+    src: "/Booklub/icons/search.svg",
     h1: "Your library is empty.",
     text: "Browse the booklub library to add the books you’d like to read!",
     btnText: "Browse books",
@@ -104,7 +95,6 @@ export default function UserProfile (props) {
   
   return (
     <>
-  
       
       <MainContainer>
         <UserImage src={userData.avatar}></UserImage>
@@ -116,7 +106,7 @@ export default function UserProfile (props) {
               <ImageSlider>
                 {bookclubs.map((club, index) =>(
                   <Club key={index}>
-                    <Link to={"/bookclub/" + club.id + "/"}> <Avatar src="/icons/bookRow.svg"></Avatar></Link>
+                    <Link to={"/bookclub/" + club.id + "/"}> <Avatar src="/Booklub/icons/bookRow.svg"></Avatar></Link>
                     <Name>{club.name}</Name>
                   </Club>
                 ))}
@@ -132,7 +122,7 @@ export default function UserProfile (props) {
         <TitleRedirect title = 'My Ratings' followArrow="/myratings" />
         {ratedBooks.length 
           ? <BookSlider showStars = {true} rating={ratedBooks.rating} books={ratedBooks}/> 
-          : <NoResult src="/icons/speechBubble.svg" text="Your rated books will appear here" />}
+          : <NoResult src="/Booklub/icons/speechBubble.svg" text="Your rated books will appear here" />}
     
         <BigButton text="Sign Out" handleClick={gauth.signOut}/>
       </MainContainer>

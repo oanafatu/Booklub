@@ -164,8 +164,7 @@ app.get('/api/bookclub/:id/usersearch/:email', async (req, res) => {
 
 app.post('/api/bookclub/addmember', async (req, res) => {
 
-  //const userId = req.body.userId;
-  userId = 1;
+  const userId = req.body.userId;
   const bookclubId = req.body.bookclubId;
 
   try {

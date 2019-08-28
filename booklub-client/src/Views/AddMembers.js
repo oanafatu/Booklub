@@ -44,7 +44,7 @@ export default function AddMembers (props) {
         <Header title="Add members"/>
         <Text>Invite other booklub users to your club by entering their email in the search field below.</Text>
         <SearchBar onSubmit={handleSearch}/>
-        { userData.result ? userData.result.map((user, index) => <MemberCard bookclubId={bookclubId} key={index} user={user}/>) : <NoResult src="/icons/errorCloud.svg" text={userData.message}/>}
+        { userData.result ? userData.result.map((user, index) => <MemberCard bookclubId={bookclubId} key={index} user={user}/>) : <NoResult src="/Booklub/icons/errorCloud.svg" text={userData.message}/>}
       </>
     )
   }

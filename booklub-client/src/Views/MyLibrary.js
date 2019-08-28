@@ -23,7 +23,7 @@ export default function MyLibrary (props) {
   }
 
   const noBooksOptions = {
-    src: "/icons/search.svg",
+    src: "/Booklub/icons/search.svg",
     h1: "Your library is empty.",
     text: "Browse the booklub library to add the books you’d like to read!",
     btnText: "Browse books",

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import auth from './../helper/googleAuth';
+import gauth from './../helper/googleAuth';
 
 
 const Logo = styled.h1`
@@ -49,7 +49,7 @@ const BtnText = styled.p`
 export default function Login(){
   
   useEffect(() => {
-    auth.startApp();
+    gauth.startApp();
   }, []);
 
   return (
