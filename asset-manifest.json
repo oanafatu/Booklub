@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Booklub/static/css/main.4e868c70.chunk.css",
-    "main.js": "/Booklub/static/js/main.48bb7db1.chunk.js",
-    "main.js.map": "/Booklub/static/js/main.48bb7db1.chunk.js.map",
+    "main.js": "/Booklub/static/js/main.e5cbce59.chunk.js",
+    "main.js.map": "/Booklub/static/js/main.e5cbce59.chunk.js.map",
     "runtime~main.js": "/Booklub/static/js/runtime~main.2535f56e.js",
     "runtime~main.js.map": "/Booklub/static/js/runtime~main.2535f56e.js.map",
     "static/css/2.39017165.chunk.css": "/Booklub/static/css/2.39017165.chunk.css",
     "static/js/2.95c14e2b.chunk.js": "/Booklub/static/js/2.95c14e2b.chunk.js",
     "static/js/2.95c14e2b.chunk.js.map": "/Booklub/static/js/2.95c14e2b.chunk.js.map",
     "index.html": "/Booklub/index.html",
-    "precache-manifest.c041ced23ed488f0efe1e209c9f78686.js": "/Booklub/precache-manifest.c041ced23ed488f0efe1e209c9f78686.js",
+    "precache-manifest.b57df29741a34465e2991e74e201c1c7.js": "/Booklub/precache-manifest.b57df29741a34465e2991e74e201c1c7.js",
     "service-worker.js": "/Booklub/service-worker.js",
     "static/css/2.39017165.chunk.css.map": "/Booklub/static/css/2.39017165.chunk.css.map",
     "static/css/main.4e868c70.chunk.css.map": "/Booklub/static/css/main.4e868c70.chunk.css.map"
