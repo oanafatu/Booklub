@@ -22,15 +22,15 @@ function App() {
       <HashRouter>
         <div className="main-container">
           <Route exact path='/login' component={Login}/>
-          <PrivateRoute exact path='/' component={UserProfile}/>
-          <PrivateRoute exact path='/bookclubs/:id/setcurrentbook' component={SetCurrentBook} />
-          <PrivateRoute exact path='/mylibrary'  component={MyLibrary} />
-          <PrivateRoute exact path='/mybookclubs' component={MyBookclubs} />
-          <PrivateRoute exact path='/booksearch'  component={BookSearch} />
-          <PrivateRoute exact path='/createclub'  component={CreateClub} />
-          <PrivateRoute exact path='/bookclub/:id' component={Bookclub} />
-          <PrivateRoute exact path='/bookclub/:id/addmembers' component={AddMembers} />
-          <PrivateRoute exact path='/myratings' component={MyRatings} />
+          <Route exact path='/' component={UserProfile}/>
+          <Route exact path='/bookclubs/:id/setcurrentbook' component={SetCurrentBook} />
+          <Route exact path='/mylibrary'  component={MyLibrary} />
+          <Route exact path='/mybookclubs' component={MyBookclubs} />
+          <Route exact path='/booksearch'  component={BookSearch} />
+          <Route exact path='/createclub'  component={CreateClub} />
+          <Route exact path='/bookclub/:id' component={Bookclub} />
+          <Route exact path='/bookclub/:id/addmembers' component={AddMembers} />
+          <Route exact path='/myratings' component={MyRatings} />
         </div>
       </HashRouter>
     </HistoryContext.Provider>

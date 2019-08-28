@@ -69,7 +69,7 @@ export default function UserProfile (props) {
   
   useEffect(() => {
 
-    gauth.startApp();
+    //gauth.startApp();
 
     doFetch('myprofile/', 'GET')
       .then(data => {
@@ -85,13 +85,15 @@ export default function UserProfile (props) {
   books = books.sort((a, b) => a.is_read - b.is_read)
 
   const noClubOptions = {
-    src: "/icons/speechBubble.svg",
+    src:  "/icons/speechBubble.svg",
     h1: "You haven't joined any bookclubs yet...!",
     text: "Ask your friends to add you or create your own bookclub here.",
     btnText: "Create new club",
     handleClick: () => props.history.push('/createclub')
   };
   
+// "/icons/speechBubble.svg",
+
   const noBooksOptions = {
     src: "/icons/search.svg",
     h1: "Your library is empty.",
@@ -102,9 +104,7 @@ export default function UserProfile (props) {
   
   return (
     <>
-      <PhoneBar>
-        <img src="/icons/phoneBar.svg" alt="phonebar"></img>
-      </PhoneBar>
+  
       
       <MainContainer>
         <UserImage src={userData.avatar}></UserImage>

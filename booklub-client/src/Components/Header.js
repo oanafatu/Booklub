@@ -37,7 +37,7 @@ const Title = styled.h1`
 export default function Header (props) {
   return (
     <>
-    <PhoneBar src="/icons/phoneBar.svg"></PhoneBar>
+    
     <Container>
       <NavLinks>
         <Icon className="fas fa-chevron-left" onClick={() => window.history.back()}></Icon>

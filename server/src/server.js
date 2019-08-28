@@ -54,8 +54,9 @@ app.get('/api/booksearch/:query', async (req, res) => {
 });
 
 app.get('/api/mylibrary', async (req, res) => {
-  const userId = req.cookies['userId'];
-  
+  //const userId = req.cookies['userId'];
+  userId = 1;
+
   try {
     let result = await db.getUserLib(userId);
     res.send(result);
@@ -65,7 +66,8 @@ app.get('/api/mylibrary', async (req, res) => {
 });
 
 app.get('/api/mybookclubs', async (req, res) => {
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  userId = 1;
   try {
     const bookclubs = await db.getUserClubs(userId);
     const userBookclubs = bookclubs.map(bookclub => getDetails(bookclub));
@@ -78,7 +80,8 @@ app.get('/api/mybookclubs', async (req, res) => {
 
 app.post('/api/book/addtomylibrary', async (req, res) => {
   try {
-    const userId = req.cookies['userId'];
+    //const userId = req.cookies['userId'];
+    userId = 1;
     let booksContent = await db.searchForBook(req.body.id);
 
     if (booksContent.rows.length < 1) {
@@ -101,7 +104,8 @@ app.post('/api/book/addtomylibrary', async (req, res) => {
 });
 
 app.delete('/api/mylibrary/remove/:id', async (req, res) => {
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  userId = 1;
   try {
     let updatedLib = await db.removeBookFromLib(userId, req.params.id);
     
@@ -123,7 +127,8 @@ app.get('/api/bookclub/:id', async (req, res) => {
 });
 
 app.post('/api/bookclub/create', async (req, res) => { 
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  userId = 1;
   try {
     
     let clubId = await db.addNewClub(req.body.clubName, req.body.clubTheme, req.body.clubDesc);
@@ -159,7 +164,8 @@ app.get('/api/bookclub/:id/usersearch/:email', async (req, res) => {
 
 app.post('/api/bookclub/addmember', async (req, res) => {
 
-  const userId = req.body.userId;
+  //const userId = req.body.userId;
+  userId = 1;
   const bookclubId = req.body.bookclubId;
 
   try {
@@ -182,7 +188,8 @@ app.post('/api/bookclub/addmember', async (req, res) => {
 });
 
 app.delete('/api/bookclub/:id/leaveclub/', async (req, res) => {
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  userId = 1;
   const bookClubId = req.params.id;
   try {
     await db.removeUserFromClub(userId, bookClubId);
@@ -195,7 +202,8 @@ app.delete('/api/bookclub/:id/leaveclub/', async (req, res) => {
 });
 
 app.post('/api/mylibrary/readstatus', async (req, res) =>{
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  userId = 1;
   bookId = req.body.targetBook;
   try {
     await db.setReadStatus(userId, bookId);
@@ -206,8 +214,9 @@ app.post('/api/mylibrary/readstatus', async (req, res) =>{
 });
 
 app.get('/api/myprofile', async (req, res) => {
-  const userId = req.cookies['userId'];
-  
+  //const userId = req.cookies['userId'];
+  userId = 1;
+
   try {
     const user = await db.getUserById(userId);
     const bookclubs = await db.getUserClubs(userId);
@@ -276,7 +285,8 @@ app.post('/api/bookclub/:id/markdone', async (req, res) => {
   const bookId = req.body.bookId;
 
 
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  userId = 1;
   try {
     await db.markCurrentBookDone(bookId, bookclubId);
 
@@ -294,7 +304,8 @@ app.post('/api/bookclub/:id/markdone', async (req, res) => {
 });
 
 app.post('/api/myratings/update', async (req, res) => {
-  const userId = req.cookies['userId'];
+  //const userId = req.cookies['userId'];
+  userId = 1;
   const { bookId, rating } = req.body;
 
   try {
