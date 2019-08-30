@@ -33,12 +33,13 @@ const signOut = () => {
   var auth2 = window.gapi.auth2.getAuthInstance();
   auth2.signOut().then(function () {
     console.log('click logout');
-    window.document.cookie = "userId=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.booklub-jlano.herokuapp.com";
+    window.document.cookie = "userId=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/Booklub;";
     window.location = '/Booklub/#/login';
   });
 };
 
 const getCookie = cname => {
+
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
   var ca = decodedCookie.split(';');

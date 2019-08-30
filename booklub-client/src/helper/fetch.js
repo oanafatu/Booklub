@@ -9,7 +9,8 @@ async function doFetch(endpoint, method, data = null) {
     headers: {
       'Content-Type': 'application/json'
     },
-    credentials: 'include'
+    credentials: 'include',
+    crossDomain: true
   };
   if (data) {
     obj.body = JSON.stringify(data);

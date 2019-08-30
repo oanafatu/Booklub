@@ -48,9 +48,12 @@ const BtnText = styled.p`
 
 export default function Login(){
   
-  useEffect(() => {
-    gauth.startApp();
-  }, []);
+  // useEffect(() => {
+  //   console.log('start auth_new')
+  //   gauth.startApp();
+  // }, []);
+
+  gauth.startApp();
 
   return (
       <>

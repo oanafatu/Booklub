@@ -8,12 +8,15 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', req.headers.origin);
+  //res.header('Access-Control-Allow-Origin', req.headers.origin);
+  res.header('Access-Control-Allow-Origin', 'https://oanafatu.github.io');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   res.header('Access-Control-Allow-Credentials', true);
   next();
 });
+
+
 
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -29,14 +32,11 @@ app.post('/api/authenticate/', async (req, res) => {
       userGoogle.avatar = randomAvatar();
       const userId = await db.addNewUser(userGoogle);
       res.cookie('userId', userId);
-      //res.cookie('userId', userId, { domain: 'oanafatu.github.io', path: '/'})
       return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
     }
 
     let userId = userData.rows[0].id;
-    
     res.cookie('userId', userId);
-    //res.cookie('userId', userId, { domain: 'oanafatu.github.io', path: '/'})
     res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));
   } catch (err) {
     console.log(err);
@@ -54,8 +54,8 @@ app.get('/api/booksearch/:query', async (req, res) => {
 });
 
 app.get('/api/mylibrary', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
 
   try {
     let result = await db.getUserLib(userId);
@@ -66,8 +66,8 @@ app.get('/api/mylibrary', async (req, res) => {
 });
 
 app.get('/api/mybookclubs', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   try {
     const bookclubs = await db.getUserClubs(userId);
     const userBookclubs = bookclubs.map(bookclub => getDetails(bookclub));
@@ -79,8 +79,8 @@ app.get('/api/mybookclubs', async (req, res) => {
 });
 
 app.post('/api/book/addtomylibrary', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   try {
     let booksContent = await db.searchForBook(req.body.id);
 
@@ -104,8 +104,8 @@ app.post('/api/book/addtomylibrary', async (req, res) => {
 });
 
 app.delete('/api/mylibrary/remove/:id', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   try {
     let updatedLib = await db.removeBookFromLib(userId, req.params.id);
     
@@ -127,8 +127,8 @@ app.get('/api/bookclub/:id', async (req, res) => {
 });
 
 app.post('/api/bookclub/create', async (req, res) => { 
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   try {
     
     let clubId = await db.addNewClub(req.body.clubName, req.body.clubTheme, req.body.clubDesc);
@@ -187,8 +187,8 @@ app.post('/api/bookclub/addmember', async (req, res) => {
 });
 
 app.delete('/api/bookclub/:id/leaveclub/', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   const bookClubId = req.params.id;
   try {
     await db.removeUserFromClub(userId, bookClubId);
@@ -201,8 +201,8 @@ app.delete('/api/bookclub/:id/leaveclub/', async (req, res) => {
 });
 
 app.post('/api/mylibrary/readstatus', async (req, res) =>{
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   bookId = req.body.targetBook;
   try {
     await db.setReadStatus(userId, bookId);
@@ -283,8 +283,8 @@ app.post('/api/bookclub/:id/markdone', async (req, res) => {
   const bookclubId = req.params.id;
   const bookId = req.body.bookId;
 
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   try {
     await db.markCurrentBookDone(bookId, bookclubId);
 
@@ -302,8 +302,8 @@ app.post('/api/bookclub/:id/markdone', async (req, res) => {
 });
 
 app.post('/api/myratings/update', async (req, res) => {
-  //const userId = req.cookies['userId'];
-  userId = 1;
+  const userId = req.cookies['userId'];
+  //userId = 1;
   const { bookId, rating } = req.body;
 
   try {
