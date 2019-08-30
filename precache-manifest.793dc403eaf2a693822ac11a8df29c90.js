@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd26ca575b2661d28fac23dae7bd0b5b",
+    "revision": "d9790bf19b823286eeb9f58e035027b2",
     "url": "/Booklub/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Booklub/static/css/2.39017165.chunk.css"
   },
   {
-    "revision": "d3815ecff09b2efed9ab",
+    "revision": "b49666428ae10075a987",
     "url": "/Booklub/static/css/main.4e868c70.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Booklub/static/js/2.95c14e2b.chunk.js"
   },
   {
-    "revision": "d3815ecff09b2efed9ab",
-    "url": "/Booklub/static/js/main.080f5de3.chunk.js"
+    "revision": "b49666428ae10075a987",
+    "url": "/Booklub/static/js/main.46713ca6.chunk.js"
   },
   {
     "revision": "9eec5a5855ec75f8ebed",
