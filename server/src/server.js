@@ -31,11 +31,13 @@ app.post('/api/authenticate/', async (req, res) => {
     if (userData.rows.length < 1) {
       userGoogle.avatar = randomAvatar();
       const userId = await db.addNewUser(userGoogle);
+     
       res.cookie('userId', userId);
       return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
     }
 
     let userId = userData.rows[0].id;
+
     res.cookie('userId', userId);
     res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));
   } catch (err) {
