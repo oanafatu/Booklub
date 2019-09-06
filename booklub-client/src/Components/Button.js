@@ -10,7 +10,7 @@ export const Btn = styled.button`
   font-weight: 600;
   font-size: 9px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: ${props => props.disabled ? "light-gray" : props.isGray ? "light-gray" : "#4b74ff"}
+  background-color: ${props => props.disabled ? "gray" : props.isGray ? "gray" : "#4b74ff"}
 `
 
 export default function Button (props){
