@@ -1,5 +1,7 @@
 # Bookclub - our mob final project at SALT. 
 
+Check it out here: https://booklub-client.herokuapp.com
+
 The requirements for the final 2 weeks projects were, as following: 
 • Must be full stack
 • Must use React/Vue & Node
