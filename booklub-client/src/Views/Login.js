@@ -48,9 +48,12 @@ const BtnText = styled.p`
 
 export default function Login(){
   
-  useEffect(() => {
-    auth.startApp();
-  }, []);
+  auth.startApp();
+
+  // useEffect(() => {
+  //   console.log('looooogin')
+  //   auth.startApp();
+  // }, []);
 
   return (
       <>

@@ -1,3 +1,4 @@
+console.log('teeeeeest');
 const express = require('express');
 const { searchBook, getDetails, randomAvatar } = require('./service.js');
 const google = require('./google');
@@ -5,11 +6,10 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const db = require('./database');
 const app = express();
-const port = 4000;
-
-
+const port = process.env.PORT || 4000;
 
 app.use((req, res, next) => {
+  //const origin = process.env.NODE_ENV === 'production' ? '*.herokuapp.com' : req.headers.origin;
   res.header('Access-Control-Allow-Origin', req.headers.origin);
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
@@ -182,6 +182,7 @@ app.post('/api/mylibrary/readstatus', async (req, res) =>{
 
 app.get('/api/myprofile', async (req, res) => {
   const userId = req.cookies['userId'];
+  //const userId = 1;
   
   try {
     const user = await db.getUserById(userId);
@@ -209,12 +210,14 @@ app.post('/api/authenticate/', async (req, res) => {
     if (userData.rows.length < 1) {
       userGoogle.avatar = randomAvatar();
       const userId = await db.addNewUser(userGoogle);
+      
       res.cookie('userId', userId);
+      
       return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
     }
     let userId=userData.rows[0].id;
-    
     res.cookie('userId', userId);
+    
     res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));
   } catch (err) {
     console.log(err);

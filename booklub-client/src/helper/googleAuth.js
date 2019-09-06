@@ -1,11 +1,13 @@
 import doFetch from '../fetch';
 
 const startApp = () => {
+  console.log('login 2')
   window.gapi.load('auth2', function(){
     window.auth2 = window.gapi.auth2.init( {
       client_id: '39669963550-ej271uev3v1lfjts7oope1aq2dmu46b7.apps.googleusercontent.com',
       cookiepolicy: 'single_host_origin',
     });
+    console.log('here');
     attachSignin(window.document.getElementById('signin'));
   });
 };
@@ -13,12 +15,13 @@ const startApp = () => {
 const attachSignin = element => {
   window.auth2.attachClickHandler(element, {},
     function(googleUser) {
-      
+
       doFetch('authenticate/', 'POST', {
         idToken: googleUser.Zi.id_token
       })
       .then(data => {
         if (data.userId) {
+          document.cookie = `userId=${data.userId}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
           window.location = "/";
         }
       })

@@ -2,6 +2,7 @@ const https = require('https');
 const convert = require('xml-js');
 require('dotenv').config();
 const key = process.env.MYAPIKEY;
+console.log(key);
 const db = require('./database');
 
 
@@ -21,6 +22,7 @@ function searchBook (query, pageId = 1){
       
       res.on('end', () => {
         let xml = body;
+        console.log(body);
         let result = JSON.parse(convert.xml2json(xml, {compact: true, spaces: 4}));
         let partial = result.GoodreadsResponse.search;
 
