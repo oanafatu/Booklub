@@ -164,7 +164,7 @@ async function getUserById (userId){
 }
 
 async function addNewUser (user) {
-  const result = await executeQuery(insertNewUser, [user.id, user.email, user.firstName, user.lastName, user.avatar]);  
+  const result = await executeQuery(insertNewUser, [user.id, user.email.toLowerCase(), user.firstName, user.lastName, user.avatar]);  
   return result.rows[0].id;
 }
 

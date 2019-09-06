@@ -115,7 +115,7 @@ app.get('/api/bookclub/:id/usersearch/:email', async (req, res) => {
   const email = req.params.email;
   const bookclubId=req.params.id;
   try {
-    let result = await db.getUserByEmail(email);
+    let result = await db.getUserByEmail(email.toLowerCase());
     
     if (result.length < 1) {
       return res.send(JSON.stringify({ message : 'No booklub member matching the email', result: null}));

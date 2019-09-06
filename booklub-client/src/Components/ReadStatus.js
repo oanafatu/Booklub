@@ -8,7 +8,7 @@ import {HistoryContext} from './../App';
 
 toast.configure({});
 
-const Test = styled.button`
+const Rate = styled.button`
   display: block;
   border: none;
   margin: 0 auto;
@@ -36,7 +36,7 @@ export default function ReadStatus (props) {
     }).then(res => {
       setReadStatus(!readStatus);
       if (!readStatus){
-        toast( <Test onClick={() => history.push('/myratings')}> Rate the book now! </Test>, {
+        toast( <Rate onClick={() => history.push('/myratings')}> Rate the book now! </Rate>, {
           position: "bottom-center",
           autoClose: 5000,
           hideProgressBar: false,
