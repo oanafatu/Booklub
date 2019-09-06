@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import auth from './../helper/googleAuth';
-
 
 const Logo = styled.h1`
   font-size: 40px;
