@@ -11,6 +11,8 @@ const Title = styled.p`
 const Arrow = styled.button`
   display: inline-block;
   text-align: right;
+  background-color: unset;
+  border-style: none;
 `;
 
 const Div = styled.div`

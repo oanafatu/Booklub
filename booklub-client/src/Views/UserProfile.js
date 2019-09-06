@@ -15,13 +15,6 @@ const MainContainer = styled.div`
   display: block;
 `;
 
-const PhoneBar = styled.div`
-  display: block;
-  position: absolute;
-  top: -0.5px;
-  right: 1px;
-  margin: 0px auto;
-`;
 
 const Club = styled.div`
   text-align: center;
@@ -102,9 +95,7 @@ export default function UserProfile (props) {
   
   return (
     <>
-      <PhoneBar>
-        <img src="/icons/phoneBar.svg" alt="phonebar"></img>
-      </PhoneBar>
+   
       
       <MainContainer>
         <UserImage src={userData.avatar}></UserImage>
