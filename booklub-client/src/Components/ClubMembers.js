@@ -36,11 +36,14 @@ const Btn = styled.button`
   top: -20px;
   width: 100%;
   text-align: right;
+  background-color: unset;
+  border-style: none;
   `;
   
 const Icon = styled.i`
   color: black;
   text-decoration: none;
+  
 `
 
 export default function ClubMembers (props) {

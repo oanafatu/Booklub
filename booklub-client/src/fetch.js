@@ -1,4 +1,6 @@
-const url = 'http://localhost:4000/api/';
+//const url = 'http://localhost:4000/api/';
+
+const url = process.env.NODE_ENV === 'production' ? 'https://booklub-server.herokuapp.com/api/' : 'http://localhost:4000/api/' ;
 
 async function doFetch(endpoint, method, data = null) {
 

@@ -1,6 +1,7 @@
 import doFetch from '../fetch';
 
 const startApp = () => {
+
   window.gapi.load('auth2', function(){
     window.auth2 = window.gapi.auth2.init( {
       client_id: '39669963550-ej271uev3v1lfjts7oope1aq2dmu46b7.apps.googleusercontent.com',
@@ -19,6 +20,7 @@ const attachSignin = element => {
       })
       .then(data => {
         if (data.userId) {
+          document.cookie = `userId=${data.userId}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
           window.location = "/";
         }
       })

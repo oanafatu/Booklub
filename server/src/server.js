@@ -1,3 +1,4 @@
+
 const express = require('express');
 const { searchBook, getDetails, randomAvatar } = require('./service.js');
 const google = require('./google');
@@ -5,11 +6,10 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const db = require('./database');
 const app = express();
-const port = 4000;
-
-
+const port = process.env.PORT || 4000;
 
 app.use((req, res, next) => {
+
   res.header('Access-Control-Allow-Origin', req.headers.origin);
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
@@ -115,7 +115,7 @@ app.get('/api/bookclub/:id/usersearch/:email', async (req, res) => {
   const email = req.params.email;
   const bookclubId=req.params.id;
   try {
-    let result = await db.getUserByEmail(email);
+    let result = await db.getUserByEmail(email.toLowerCase());
     
     if (result.length < 1) {
       return res.send(JSON.stringify({ message : 'No booklub member matching the email', result: null}));
@@ -182,6 +182,7 @@ app.post('/api/mylibrary/readstatus', async (req, res) =>{
 
 app.get('/api/myprofile', async (req, res) => {
   const userId = req.cookies['userId'];
+  //const userId = 1;
   
   try {
     const user = await db.getUserById(userId);
@@ -209,12 +210,14 @@ app.post('/api/authenticate/', async (req, res) => {
     if (userData.rows.length < 1) {
       userGoogle.avatar = randomAvatar();
       const userId = await db.addNewUser(userGoogle);
+      
       res.cookie('userId', userId);
+      
       return res.send(JSON.stringify({message: 'user was added to db', userId: userId}));
     }
     let userId=userData.rows[0].id;
-    
     res.cookie('userId', userId);
+    
     res.send(JSON.stringify({message: 'user already exists in db', userId: userId}));
   } catch (err) {
     console.log(err);
