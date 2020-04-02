@@ -136,7 +136,6 @@ async function getBookclubsRating(bookId, userId){
 }
 
 async function updateAverageRating (bookclubId, bookId) {
-  console.log(bookclubId, bookId);
   await executeQuery(calculateAverageRating, [bookclubId, bookId]);  
 }
 

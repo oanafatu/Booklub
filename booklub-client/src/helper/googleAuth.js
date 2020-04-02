@@ -14,7 +14,6 @@ const startApp = () => {
 const attachSignin = element => {
   window.auth2.attachClickHandler(element, {},
     function(googleUser) {
-      console.log(googleUser)
       doFetch('authenticate/', 'POST', {
         idToken: googleUser.uc.id_token
       })

@@ -11,43 +11,6 @@ import NoResult from './../Components/NoResult';
 import BigButton from './../Components/BigButton';
 import {HistoryContext} from './../App';
 
-const MainContainer = styled.div`
-  display: block;
-`;
-
-
-const Club = styled.div`
-  text-align: center;
-  display: inline-block;
-  margin: 0 10px;
-  height: 120px; 
-`;
-
-const Avatar = styled.img`
-  width: 90px;
-`;
-
-const UserImage = styled.img`
-  width: 110px;
-  display: block;
-  margin: 60px auto 20px;
-`
-
-const UserName = styled.h1`
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-`;
-
-const Name = styled.p`
-  margin-top: 10px;
-  font-size: 13px;
-`;
-
-const Container = styled.div`
-  text-align: center;
-  margin-bottom: 50px;
-`;
 
 export default function UserProfile (props) {
   const [oneState, setOneState] = useState({
@@ -94,16 +57,14 @@ export default function UserProfile (props) {
   };
   
   return (
-    <>
-   
-      
+ 
       <MainContainer>
         <UserImage src={userData.avatar}></UserImage>
         <UserName>{userData.first_name} {userData.last_name}</UserName>
         <TitleRedirect title = 'My Clubs' followArrow="/mybookclubs" />
 
-        {bookclubs.length 
-          ? (<Container>
+        {bookclubs.length > 0 ?
+        <Container>
               <ImageSlider>
                 {bookclubs.map((club, index) =>(
                   <Club key={index}>
@@ -112,21 +73,61 @@ export default function UserProfile (props) {
                   </Club>
                 ))}
               </ImageSlider>
-            </Container>)
+            </Container>
           : <NoContentLarge {...noClubOptions} />}
 
         <TitleRedirect title = 'My Library' followArrow="/mylibrary"/>
-        {books.length 
-          ? <BookSlider showStars = {false} books = {books} /> 
+
+        {books.length > 0 ?
+        <BookSlider showStars = {false} books = {books} /> 
           : <NoContentLarge {...noBooksOptions}/>}
     
         <TitleRedirect title = 'My Ratings' followArrow="/myratings" />
-        {ratedBooks.length 
-          ? <BookSlider showStars = {true} rating={ratedBooks.rating} books={ratedBooks}/> 
+
+        {ratedBooks.length > 0 ?
+        <BookSlider showStars = {true} rating={ratedBooks.rating} books={ratedBooks}/> 
           : <NoResult src="/icons/speechBubble.svg" text="Your rated books will appear here" />}
     
         <BigButton text="Sign Out" handleClick={gauth.signOut}/>
+
       </MainContainer>
-    </>
   )
 }
+
+
+const MainContainer = styled.div`
+  display: block;
+`;
+
+const Club = styled.div`
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px;
+  height: 120px; 
+`;
+
+const Avatar = styled.img`
+  width: 90px;
+`;
+
+const UserImage = styled.img`
+  width: 110px;
+  display: block;
+  margin: 60px auto 20px;
+`
+
+const UserName = styled.h1`
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+`;
+
+const Name = styled.p`
+  margin-top: 10px;
+  font-size: 13px;
+`;
+
+const Container = styled.div`
+  text-align: center;
+  margin-bottom: 50px;
+`;

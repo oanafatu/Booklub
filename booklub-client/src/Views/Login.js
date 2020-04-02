@@ -49,11 +49,6 @@ export default function Login(){
   
   auth.startApp();
 
-  // useEffect(() => {
-  //   console.log('looooogin')
-  //   auth.startApp();
-  // }, []);
-
   return (
       <>
         <Container>

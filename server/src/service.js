@@ -5,7 +5,6 @@ const key = process.env.MYAPIKEY;
 const db = require('./database');
 
 
-
 function searchBook (query, pageId = 1){
   return new Promise ((resolve, reject) => {
     let url = 'https://www.goodreads.com/search/index.xml?q=' + query + '&page=' + pageId + '&key=' + key;
