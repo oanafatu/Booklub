@@ -18,7 +18,7 @@
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.0.0",
     "eslint": "^6.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "google-auth-library": "^4.2.5",
     "nodemon": "^1.19.1",
     "pg": "^7.11.0",
